@@ -1,0 +1,6 @@
+[submodule "Domain Software/ionic-app-skeleton"]
+	path = Domain Software/ionic-app-skeleton
+	url = https://github.com/ScaleIT-Org/ionic-app-skeleton
+[submodule "Domain Software/dotnet-api-backend-skeleton"]
+	path = Domain Software/dotnet-api-backend-skeleton
+	url = https://github.com/ScaleIT-Org/dotnet-api-backend-skeleton
