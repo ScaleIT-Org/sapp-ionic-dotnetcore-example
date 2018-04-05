@@ -1,4 +1,10 @@
-# ScaleIT App Meta Skeleton 
+<img src="https://raw.githubusercontent.com/ScaleIT-Org/media-ressources/master/logo/scaleit-logo.png" width="50%"/>| <img src="https://github.com/ScaleIT-Org/media-ressources/raw/master/logo/docker-dotnet-microsoft-scaleit.png" />| <img src="https://github.com/ScaleIT-Org/media-ressources/raw/master/logo/scaleit-waben-ionic.png" width="50%"/>
+--|--|--
+
+
+# ScaleIT App Using Ionic and Dotnet Core ![License](https://img.shields.io/github/license/ScaleIT-Org/sapp-ionic-dotnetcore-example.svg?link=https://github.com/ScaleIT-Org/sapp-ionic-dotnetcore-example/blob/master/LICENSE)
+
+
 
 Technology Stack Agnostic Industry 4.0 Ready App Skeleton.
 
@@ -9,7 +15,10 @@ http://scaleit-platform-documentation.readthedocs.io/en/latest/app_readiness.htm
 
 ## Usage
 
-    git clone https://github.com/ScaleIT-Org/sapp-i40-app-skeleton.git My_New_ScaleiT_App
+    docker-compose up
+    #navigate to http://localhost:5050/index.html#/user
+    
+TODO: remove index.html (probably some kestrel setting)
     
 ### With Git Submodule Composition
 
