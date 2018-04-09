@@ -3,3 +3,5 @@ version: '2'
 services:
     my-app:
         build: Domain Software/
+        ports:
+            - "5050:5050"
