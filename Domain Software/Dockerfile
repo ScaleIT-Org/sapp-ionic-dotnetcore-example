@@ -20,7 +20,8 @@ RUN npm install
 # Copy our app from the hard drive to the working direcotry in the docker image
 COPY ionic-app-skeleton/ ./
 # Build the App inside the image
-RUN npm run build --prod
+RUN npm run build
+# --prod causes vendor.js to be missed while serving from docker
 
 FROM microsoft/dotnet:2.1-sdk AS backend-build
 WORKDIR /app
