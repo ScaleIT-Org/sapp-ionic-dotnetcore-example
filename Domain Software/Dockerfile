@@ -23,7 +23,7 @@ COPY ionic-app-skeleton/ ./
 RUN npm run build
 # --prod causes vendor.js to be missed while serving from docker
 
-FROM microsoft/dotnet:2.1-sdk AS backend-build
+FROM microsoft/dotnet:2.2-sdk AS backend-build
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
@@ -38,7 +38,7 @@ COPY --from=frontend-build /opt/app/www ./out/wwwroot
 
 ##################
 # Production image 
-FROM microsoft/dotnet:2.1-runtime-alpine AS deploy-env
+FROM microsoft/dotnet:2.2-runtime-alpine AS deploy-env
 # use aspnet core https://github.com/NileshGule/dotnet-2017/blob/master/DotNet2017/CoreWebAPI/Dockerfile
 
 # Upgrade to newest packages
